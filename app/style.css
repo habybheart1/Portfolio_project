@@ -13,6 +13,15 @@ h5,
 h6 {
   font-family: var(--head-font-family);
 }
+.project-description h2 {
+  text-align: center;
+  font-size: 64px;
+}
+p {
+  color: #272142;
+  font-size: 18px;
+  line-height: 30px;
+}
 .opening_page {
   background: #f9f7fe;
   text-align: center;
@@ -41,23 +50,26 @@ h6 {
   padding: 18px 30px;
   line-height: 27px;
 }
-.head-page p {
-  color: #272142;
-  font-size: 18px;
-  text-align: center;
-}
-.head-page h2 {
-  font-size: 64px;
-  text-align: center;
-}
 
 #button-link {
   font-size: 16px;
+  background-color: white;
   color: #6c63ff;
-  background-color: #6c63ff;
-  color: #ffffff;
   text-decoration: none;
   border-radius: 4px;
   padding: 18px 30px;
   line-height: 27px;
+  border: 1px solid #6c63ff;
+}
+.project-description {
+  padding: 120px 60px;
+}
+@media (max-width: 960px) {
+  h1 {
+    font-size: 16px;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }
