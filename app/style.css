@@ -65,7 +65,7 @@ p {
 .project-description {
   padding: 120px 60px;
 }
-.about-page {
+.content-page {
   padding: 160px 20px;
 }
 .occupation {
@@ -74,18 +74,26 @@ p {
   font-size: 18px;
   line-height: 27px;
 }
-.about-page h1 {
+.content-page h1 {
   font-weight: 700;
   font-size: 64px;
   line-height: 85px;
   margin-bottom: 20px;
 }
-.about-page img {
+.content-page img {
   width: 603px;
   height: 904px;
 }
-.about-page-content {
+.content-page-content {
   margin: 30px;
+}
+.base {
+  text-align: center;
+  font-family: var(--body-font-family);
+}
+.base p {
+  color: rgba(39, 33, 66, 0.7);
+  opacity: 70%;
 }
 @media (max-width: 960px) {
   h1 {
@@ -94,7 +102,7 @@ p {
   .opening-page {
     padding: 80px 10px;
   }
-  .about-page {
+  .content-page {
     padding: 0;
     text-align: center;
   }
