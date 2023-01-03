@@ -1,6 +1,7 @@
 :root {
   --head-font-family: "Playfair Display", serif;
   --body-font-family: "Poppins", sans-serif;
+  --primary-colour: #272142;
 }
 body {
   font-family: var(--body-font-family);
@@ -18,25 +19,25 @@ h6 {
   font-size: 64px;
 }
 p {
-  color: #272142;
+  color: var(--primary-colour);
   font-size: 18px;
   line-height: 30px;
 }
-.opening_page {
+.opening-page {
   background: #f9f7fe;
   text-align: center;
   padding: 160px 20px;
 }
-.opening_page p {
+.opening-page p {
   font-size: 36px;
-  color: #272142;
+  color: var(--primary-colour);
   margin: 0;
 }
-.opening_page h1 {
+.opening-page h1 {
   font-size: 96px;
 }
-.opening_page h2 {
-  color: #272142;
+.opening-page h2 {
+  color: var(--primary-colour);
   font-size: 24px;
   font-weight: normal;
   line-height: 2;
@@ -64,12 +65,38 @@ p {
 .project-description {
   padding: 120px 60px;
 }
+.about-page {
+  padding: 160px 20px;
+}
+.occupation {
+  color: var(--primary-colour);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+}
+.about-page h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  margin-bottom: 20px;
+}
+.about-page img {
+  width: 603px;
+  height: 904px;
+}
+.about-page-content {
+  margin: 30px;
+}
 @media (max-width: 960px) {
   h1 {
     font-size: 16px;
   }
-  .opening_page {
+  .opening-page {
     padding: 80px 10px;
+  }
+  .about-page {
+    padding: 0;
+    text-align: center;
   }
   .project-description {
     padding: 0;
