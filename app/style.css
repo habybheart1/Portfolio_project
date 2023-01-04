@@ -2,6 +2,7 @@
   --head-font-family: "Playfair Display", serif;
   --body-font-family: "Poppins", sans-serif;
   --primary-colour: #272142;
+  --secondary-color: #6c63ff;
 }
 body {
   font-family: var(--body-font-family);
@@ -44,7 +45,7 @@ p {
   margin: 24px 49px;
 }
 .btn-branding {
-  background-color: #6c63ff;
+  background-color: var(--secondary-color);
   color: #ffffff;
   text-decoration: none;
   border-radius: 4px;
@@ -55,12 +56,12 @@ p {
 #button-link {
   font-size: 16px;
   background-color: white;
-  color: #6c63ff;
+  color: var(--secondary-color);
   text-decoration: none;
   border-radius: 4px;
   padding: 18px 30px;
   line-height: 27px;
-  border: 1px solid #6c63ff;
+  border: 1px solid var(--secondary-color);
 }
 .project-description {
   padding: 120px 60px;
@@ -95,9 +96,35 @@ p {
   color: rgba(39, 33, 66, 0.7);
   opacity: 70%;
 }
+nav {
+  padding: 20px 0;
+}
+nav img {
+  line-height: 40px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  margin-left: 15px;
+  line-height: 24px;
+}
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 150ms ease-in;
+}
+nav a:hover,
+nav li:active a {
+  color: var(--secondary-color);
+}
+
 @media (max-width: 960px) {
   h1 {
-    font-size: 16px;
+    font-size: 14px;
   }
   .opening-page {
     padding: 80px 10px;
@@ -109,5 +136,8 @@ p {
   .project-description {
     padding: 0;
     text-align: center;
+  }
+  nav a {
+    font-size: 12px;
   }
 }
