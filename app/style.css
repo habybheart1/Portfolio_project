@@ -65,6 +65,7 @@ p {
 }
 .project-description {
   padding: 120px 60px;
+  margin-bottom: 0;
 }
 .content-page {
   padding: 160px 20px;
@@ -118,13 +119,36 @@ nav a {
   transition: all 150ms ease-in;
 }
 nav a:hover,
-nav li:active a {
+nav li:active a,
+footer a:hover {
   color: var(--secondary-color);
+}
+footer .footer-contact {
+  background-color: #f9f7fe;
+  padding: 30px 100px;
+  border-radius: 10px;
+}
+.email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+i {
+  color: var(--secondary-color);
+  background: #f9f7fe;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 18px;
+  opacity: 95%;
+  margin-left: 38px;
 }
 
 @media (max-width: 960px) {
   h1 {
-    font-size: 14px;
+    font-size: 12px;
   }
   .opening-page {
     padding: 80px 10px;
@@ -139,5 +163,14 @@ nav li:active a {
   }
   nav a {
     font-size: 12px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  footer .footer-contact {
+    padding: 10px;
+  }
+  .footer-contact p {
+    font-size: 14px;
   }
 }
