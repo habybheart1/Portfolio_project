@@ -173,4 +173,7 @@ i {
   .footer-contact p {
     font-size: 14px;
   }
+  footer button {
+    font-size: 12px;
+  }
 }
